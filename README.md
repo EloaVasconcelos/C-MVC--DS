@@ -1,17 +1,21 @@
 # C-MVC--DS
 
- private int CodCliente { get; set; }
+ private ushort CodCliente { get; set; }
         [Display(Name
 
-        private string Nome { get; set; }
-        [Display(Name="Nome")]
-        [Required(ErrorMessage ="Por Favor preencha seu Nome")]
 
 
-       private string Endereco { get; set; }
+
+[Display(Name="Nome do Cliente ")]
+[Required(ErrorMessage ="Por Favor preencha seu Nome")]
+private string Nome { get; set; }
 
 
-       private string Telefone { get; set; }
+[Display(Name="Endereço")
+
+private string Endereco { get; set; }
+[Required(ErrorMessage ="Por Favor preencha seu Nome")]
+   private string Telefone { get; set; }
 
         private string Email { get; set; }
         [Display(Name = "Email")]
